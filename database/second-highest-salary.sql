@@ -25,16 +25,20 @@ INSERT INTO Employee(Salary) VALUES (100),(200),(300);
  
 SELECT * FROM Employee;
 
- 
-SELECT MAX(Salary) FROM Employee
+
+/*Solution1:  559ms. You are here! 
+ Your runtime beats 98.76 % of mysql submissions.*/
+SELECT MAX(Salary) AS SecondhighestSalary FROM Employee
 WHERE Salary < ( SELECT MAX(Salary) FROM Employee);
  
 
- 
+/*Solution2:  891ms.*/ 
 SELECT (SELECT MAX(Salary) FROM Employee WHERE Salary NOT IN 
 (SELECT MAX(Salary) FROM Employee)) AS SecondhighestSalary;
 
-
+/*Solution3: */
+SELECT MAX(Salary) AS SecondhighestSalary FROM Employee
+WHERE Salary NOT IN ( SELECT MAX(Salary) FROM Employee); 
 
 
 
