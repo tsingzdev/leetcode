@@ -54,7 +54,7 @@ VALUES ('6', '3.85');
 
 select * from Scores;
 
-/* dense_rank in MySQL  example 0 */
+/* dense_rank in MySQL  example 1 , Submission Result: Runtime Error */
 
 set @rn1 =0;
 set @sal ='';
@@ -72,7 +72,7 @@ FROM
 ) B;
 
 
-/***  dense_rank in MySQL  example 1 */
+/***  dense_rank in MySQL  example 2 , Submission Result: Runtime Error  */
 set @Score:=''; 
 set @Rank:=0; 
 select  @Rank:=case when @Score=Score then @Rank else @Rank+1 end as Rank, @Score:=Score as Score    from Scores
@@ -81,14 +81,14 @@ order by Score DESC;
 /* BELOW reference: http://www.cnblogs.com/grandyang/p/5351611.html */
 /* https://discuss.leetcode.com/topic/16097/simple-short-fast/3  */
 
-/* Solution 1  */
+/* Solution 1, 1256ms  */
 SELECT Score, 
 (SELECT COUNT(DISTINCT Score)  FROM Scores WHERE Score >= s.Score 
 ) Rank 
 FROM Scores s ORDER BY Score DESC;
 
 
-/* Solution 2  , 782ms */
+/* Solution 2  , 626ms */
 SELECT Score, 
 (
 SELECT COUNT(*) FROM ( SELECT DISTINCT Score s FROM Scores) t 
@@ -103,7 +103,7 @@ FROM Scores s JOIN Scores t ON s.Score <= t.Score
 GROUP BY s.Id ORDER BY s.Score DESC;
 
 
-SELECT COUNT(DISTINCT t.Score) from Scores t;
+/*SELECT COUNT(DISTINCT t.Score) from Scores t; */
 
 
 
@@ -112,12 +112,6 @@ SELECT Score,
 @rank := @rank + (@pre <> (@pre := Score)) Rank
 FROM Scores, (SELECT @rank := 0, @pre := -1) INIT 
 ORDER BY Score DESC;
-
-
-/*  reference: https://helloacm.com/sql-coding-exercise-rank-scores/
-*/
-
-
 
 
 
