@@ -69,14 +69,12 @@ FROM Employee AS A, Department AS B,  (
 SELECT DepartmentId, MAX(Salary) AS Salary FROM Employee GROUP BY DepartmentId) AS C
 WHERE  C.Salary = A.Salary and B.Id = C.DepartmentId;
 
-
-/*You are here! 
-Your runtime beats 62.75% of mysql submissions.*/
+-----------------------Solution1 : 820 ms
 SELECT B.Name AS Department, A.Name AS Employee, C.Salary   
 FROM Employee AS A, Department AS B,  (
 SELECT DepartmentId, MAX(Salary) AS Salary FROM Employee GROUP BY DepartmentId) AS C
 WHERE  C.Salary = A.Salary and B.Id = C.DepartmentId 
-and A.DepartmentId = C.DepartmentId; -- Also this
+and A.DepartmentId = C.DepartmentId; 
 
 
 
