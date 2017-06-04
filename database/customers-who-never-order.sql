@@ -39,13 +39,17 @@ INSERT INTO Orders VALUES ('2', '1');
 SELECT * FROM Customers;
 SELECT * FROM Orders;
 
+
+---------------Solution 1: 481 ms
 SELECT Name AS Customers FROM Customers 
 WHERE Id NOT IN 
 (
 SELECT CustomerId FROM Orders
 );
 
+--------------Solution 2: 464 ms
 
+SELECT Customers.Name AS Customers FROM (Customers LEFT JOIN Orders ON Customers.Id = Orders.CustomerId) WHERE Orders.CustomerId IS NULL
 
 
 
