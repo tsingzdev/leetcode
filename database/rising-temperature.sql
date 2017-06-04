@@ -41,26 +41,16 @@ VALUES ('4', '2015-01-04', '40') ;
 SELECT * FROM Weather;
 
 
-SELECT Id FROM (
 
-SELECT Id, DATE_FORMAT(Date,'%Y%m%d'), Temperature FROM Weather
+/*SELECT Id, DATE_FORMAT(Date,'%Y%m%d'), Temperature FROM Weather; 
+*/
 
-) ; 
-
-
-
-/* S1: Wrong Answer */
-SELECT B.Id  FROM  Weather AS A , Weather AS B WHERE 
-B.Date > A.Date AND B.Temperature > A.Temperature  ;
-
-/* S2: Passed: add TO_DAYS to above solution, then passed. 
-You are here! 
-Your runtime beats 64.77% of mysql submissions.*/
+/* S1: Passed: add TO_DAYS */
 SELECT B.Id  FROM  Weather AS A , Weather AS B WHERE 
 TO_DAYS(B.Date) - TO_DAYS(A.Date) =1 AND B.Temperature > A.Temperature;
 
 
-/* S3: Wrong Answer:  然而，如果用DATE_FORMAT instead of TO_DAYS, got sama error to S1 */
+/* S2: Wrong Answer:  DATE_FORMAT instead of TO_DAYS, got error  */
 SELECT B.Id  FROM  Weather AS A , Weather AS B WHERE 
 DATE_FORMAT(B.Date,'%Y%m%d') - DATE_FORMAT(A.Date,'%Y%m%d') =1 AND B.Temperature > A.Temperature;
 
