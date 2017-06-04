@@ -35,37 +35,9 @@ INSERT INTO Logs(Num) VALUES (1),(1),(1),(2),(1),(2),(2);
 SELECT * FROM Logs;
 
 
-/*--------------------------Solution1: ------------------------*/
-
-SET @curnum = -999;
-SET @same=1;
-SET @group=0;
-
-SELECT DISTINCT A.num FROM (
-
-SELECT grp, num, MAX(samecount) same FROM (
- 
-SELECT 
-	(@group :=@group + IF(@curnum=num, 0,1)) grp,
-    (@same := IF(@curnum=Num, @same+1, 1)) samecount,
-    (@curnum :=Num) num
-FROM Logs ORDER BY Id 
-
-) AA  GROUP BY grp, num having same>=3
-
-) A;
-
-
-/*----------------------------Solution2: --------------------------*/
-
-SELECT Num FROM Logs; 
-WHERE 
-
-
-
-
-
-;
-
+/*----------------------------Solution 1: 1117 ms  --------------------------*/
+SELECT DISTINCT l1.Num  as ConsecutiveNums
+FROM Logs l1, Logs l2, Logs l3  
+WHERE l1.Id + 1 = l2.Id AND l2.Id + 1 = l3.Id AND l1.Num = l2.Num AND l2.Num = l3.Num 
 
 
