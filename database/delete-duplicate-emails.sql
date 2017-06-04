@@ -44,7 +44,7 @@ ORDER BY Id;
 
 DROP TABLE IF EXISTS TEMPPERSON; 
 
-/* 1  */
+/* 1 : Runtime Error */
 CREATE TABLE IF NOT EXISTS TEMPPERSON
 SELECT * FROM Person 
 WHERE Email NOT IN
@@ -64,13 +64,13 @@ GROUP BY Email HAVING COUNT(*) >=2
 SELECT DISTINCT Id, Email FROM TEMPPERSON
 ORDER BY Id;
 
-/* 2   1434ms */
+/* 2   873 ms */
 
 delete p1 from Person p1, Person p2 where p1.Email = p2.Email and p1.Id > p2.Id;
 
 SELECT * FROM Person; 
 
-/* 3   1003ms*/
+/* 3   738 ms*/
 DELETE FROM Person WHERE Id NOT IN
 (SELECT Id FROM 
 	(SELECT MIN(Id) Id FROM Person GROUP BY Email) p
@@ -79,7 +79,7 @@ DELETE FROM Person WHERE Id NOT IN
 
 SELECT * FROM Person; 
 
-/* 4 JOIN */
+/* 4 JOIN  829ms  */
 DELETE p2 FROM Person p1 JOIN Person p2 
 ON p2.Email = p1.Email WHERE p2.Id > p1.Id;
 
