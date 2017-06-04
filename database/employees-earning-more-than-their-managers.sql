@@ -35,6 +35,8 @@ INSERT INTO Employee VALUES('2', 'Henry', '80000', '4');
 INSERT INTO Employee VALUES('3', 'Sam', '60000', NULL);
 INSERT INTO Employee VALUES('4', 'Max', '90000', NULL);
 
+
+----------------- Solution 1: 1357 ms
 SELECT C.Name AS Employee FROM (
 SELECT * FROM Employee AS A
 WHERE A.Salary > (
@@ -42,3 +44,10 @@ SELECT B.Salary FROM Employee AS B
 WHERE A.ManagerId = B.Id 
 ) 
 ) AS C;
+
+
+----------------- Solution 2: 1069 ms
+
+select A.Name as Employee from Employee as A , 
+        Employee as B
+where  A.ManagerId = B.Id and A.Salary > B.Salary
