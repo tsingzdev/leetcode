@@ -93,116 +93,7 @@ INSERT INTO Users VALUES ('13', 'No', 'driver');
 SELECT * FROM Users;
 
 /*------------------------ Slution 1: ------------------------*/
-
-SELECT M.Day, truncate( (M.allt- N.cpmt)/M.allt, 2) AS 'Cancellation Rate'   FROM (
-SELECT Request_at AS Day ,  COUNT(Request_at) AS allt  FROM Trips AS A WHERE 
-A.Client_Id   IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Driver_Id IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-GROUP BY A.Request_at
-) AS M, 
-(SELECT Request_at AS Day ,  COUNT(Request_at)  AS cpmt FROM Trips AS A WHERE 
-A.Client_Id   IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Driver_Id IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Status = 'completed'
-GROUP BY A.Request_at
-)
-AS N
-WHERE M.Day = N.Day;
-
-
-/*----------------------- SOLUTION 2-----------------------*/
-
-SELECT M.Day, FORMAT(ROUND((M.allt- N.cpmt)/M.allt, 2), 2) AS 'Cancellation Rate'  FROM (
-SELECT Request_at AS Day ,  COUNT(Request_at) AS allt  FROM Trips AS A WHERE 
-A.Client_Id   IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Driver_Id IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-GROUP BY A.Request_at
-) AS M, 
-(SELECT Request_at AS Day ,  COUNT(Request_at)  AS cpmt FROM Trips AS A WHERE 
-A.Client_Id   IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Driver_Id IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Status = 'completed'
-GROUP BY A.Request_at
-)
-AS N
-WHERE M.Day = N.Day;
-
-/*-------------------function test----------------*/
-
-select round(1, 2);
-
-select FORMAT(3/3, 2);
-
-select FORMAT(0/3, 2);
-
-select FORMAT(1/2, 2);
-
-select FORMAT(2/3, 2);
-
-select ROUND(COUNT(if(a.Status <> 'completed',1,null))/COUNT(*),2) from Trips AS a;
-
-SELECT ROUND(COUNT(if(a.`Status` <> 'completed',1,null))/COUNT(*),2) FROM Trips AS A;
-
-SELECT COUNT(if(a.`Status` <> 'completed',1,null)) FROM Trips AS A;
-
-SELECT COUNT(*) FROM Trips AS A;
-
-SELECT if(a.Status <> 'completed',1,null) FROM Trips AS a;
-
-
-/*----------------------Solution 3----------------------------*/ 
-
-SELECT M.Day, ROUND((M.allt- N.cpmt)/M.allt, 2)  AS 'Cancellation Rate'  FROM (
-SELECT Request_at AS Day ,  COUNT(Request_at) AS allt  FROM Trips AS A WHERE 
-A.Client_Id   IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Driver_Id IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-GROUP BY A.Request_at
-) AS M, 
-(SELECT Request_at AS Day ,  COUNT(Request_at)  AS cpmt FROM Trips AS A WHERE 
-A.Client_Id   IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Driver_Id IN  (
-SELECT Users_Id FROM Users 
-WHERE Banned = 'No' )
-AND 
-A.Status = 'completed'
-GROUP BY A.Request_at
-)
-AS N
-WHERE M.Day = N.Day and M.Day BETWEEN '2013-10-01' AND '2013-10-03';
-
-
-/*-----------------------Solution 4----------------------------
-url: https://discuss.leetcode.com/topic/57860/129-ms-solution 
+/*url: https://discuss.leetcode.com/topic/57860/129-ms-solution 
 */
 
 select Day, round(avg(cnt), 2) as 'Cancellation Rate'
@@ -216,7 +107,7 @@ where Day BETWEEN '2013-10-01' AND '2013-10-03'
 group by Day; 
 
 
-/*------------------------Solution 5-----------------------------
+/*------------------------Solution 2-----------------------------
 url: https://discuss.leetcode.com/topic/54119/187-ms-answer
 */
 
@@ -227,7 +118,7 @@ where b.Banned='No' and a.Request_at>='2013-10-01' and a.Request_at<='2013-10-03
 group by a.Request_at;
 
 
-/*-------------------------Solution 6------------------------------ 用了IF ()
+/*-------------------------Solution 3------------------------------ 用了IF ()
 url: https://discuss.leetcode.com/topic/42188/solution-without-join/3
 */
 SELECT Request_at as Day,
@@ -238,7 +129,7 @@ WHERE (Request_at BETWEEN '2013-10-01' AND '2013-10-03')
 GROUP BY Request_at;
 
 
-/*------------------------Solution 7------------------------------ 用了case when 
+/*------------------------Solution 4------------------------------ 用了case when 
 https://discuss.leetcode.com/topic/21729/sharing-my-solution
 */
 
@@ -250,6 +141,3 @@ on t.Client_Id = u.Users_Id and u.Banned='No'
 where t.Request_at between '2013-10-01' and '2013-10-03'
 group by t.Request_at;
 
-
-/* function test */
-select round(sum(case when t.Status like 'cancelled_%' then 1 else 0 end)/count(*),2) from Trips t;
