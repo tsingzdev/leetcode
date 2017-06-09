@@ -16,11 +16,12 @@ int addDigits0(int num) {
         return 1+ (num-1)%9;
 }
 
-int addDigits(int num) {
+int addDigits1(int num) {
     int ret=0;
     while(num) {
         ret+=num%10;
         num/=10;
+
         if(ret>=10)
             ret = ret/10+ret%10;
     }
