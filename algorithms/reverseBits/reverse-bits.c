@@ -30,25 +30,27 @@ uint32_t reverseBits(uint32_t n) {
     uint32_t ret = 0;
     int i = 31;
     while(i--) {
-        ret += n&0x01;
+        //ret += n&0x01;
+        ret += n&1;
         n>>= 1;
         ret <<= 1;
     }
-    ret += n&0x01;
+    ret += n&1; ////cann't be ommitted, because of case n=2147483648
     return ret;
 }
 
+
 int main () {
     uint32_t n = 43261596;
-    uint32_t m = 1; 
+    int m = 1; 
     uint32_t p = 2147483648; 
 
     printBits(m);
     printBits(n);
     printBits(p);
-    printf("%d\n", reverseBits(m));
-    printf("%d\n", reverseBits(n));
-    printf("%d\n", reverseBits(p));
+    printf("%d: %d\n", m, reverseBits(m));
+    printf("%d: %d\n", n, reverseBits(n));
+    printf("%d: %d\n", p, reverseBits(p));
     return 0;
 }
 
