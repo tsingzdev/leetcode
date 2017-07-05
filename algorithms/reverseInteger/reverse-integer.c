@@ -54,7 +54,7 @@ int reverse2(int x) {
 }
 
 
-2define TEST(x) printf("reverse of %d is %d\n",x, reverse2(x));
+#define TEST(x) printf("reverse of %d is %d\n",x, reverse2(x));
 
 int main () {
     // basic cases
