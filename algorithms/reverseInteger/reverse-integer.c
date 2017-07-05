@@ -42,18 +42,19 @@ int reverse(int x) {
 int reverse2(int x) {
     int ret = 0;
     while (x!=0) {
-        ret = ret*10 + x%10;
-        x/=10;
         // check the over/underflow 
         if(ret > INT_MAX/10 || ret < INT_MIN/10) {
             return 0;
         }
+
+        ret = ret*10 + x%10;
+        x/=10;
     }    
     return ret;
 }
 
 
-#define TEST(x) printf("reverse of %d is %d\n",x, reverse2(x));
+2define TEST(x) printf("reverse of %d is %d\n",x, reverse2(x));
 
 int main () {
     // basic cases
@@ -64,5 +65,6 @@ int main () {
     TEST(1000000003);
     TEST(2147483647);
     TEST(-2147483648);
+    TEST(-2147483412);
 
 }
