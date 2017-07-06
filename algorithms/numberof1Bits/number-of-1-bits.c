@@ -25,12 +25,22 @@ int hammingWeight2(uint32_t n) {
         ans++;
     }     
     return ans;
-
 }
 
+int hammingWeight3(uint32_t n) {
+    int ans = 0;
+    for (; n>0;n/=2) {
+        if(n & 0x1)  // which means n is an odd number, euals to the chech if(n%2)
+           ans++; 
+    }
+    return ans;
+}
 
 int main () {
     uint32_t n = 11;
     printf("%d\n", hammingWeight2(n));
     return 0;
+
 }
+
+
