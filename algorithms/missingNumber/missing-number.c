@@ -8,7 +8,7 @@
  * Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
  *
  * */
-
+// Solution 1:
 int missingNumber(int* nums, int numsSize) {
     int n = numsSize;
     int ret = 0;
@@ -21,3 +21,12 @@ int missingNumber(int* nums, int numsSize) {
     return ret;
         
 }
+// Solution 2:
+int missingNumber(int* nums, int numsSize) {
+    int ret = 0;
+    for (int i = 0; i<numsSize; i++) {
+        ret = ret^ (i+1) ^ nums[i];
+    }
+    return ret;
+}
+

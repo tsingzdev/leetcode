@@ -8,7 +8,7 @@
  * *
  */
 
-
+// Solution 1:
 bool isPowerOfFour(int num) {
     static int mask = 0b01010101010101010101010101010101;
     
@@ -21,3 +21,14 @@ bool isPowerOfFour(int num) {
     return false;
         
 }
+
+// Solution 2:
+bool isPowerOfFour(int num) {
+    while (num && !(num & 0b11) ) {
+        num >>= 2;
+    }
+    return (num ==1);
+}
+
+
+
