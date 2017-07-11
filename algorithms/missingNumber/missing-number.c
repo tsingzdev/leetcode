@@ -21,6 +21,7 @@ int missingNumber(int* nums, int numsSize) {
     return ret;
         
 }
+
 // Solution 2:
 int missingNumber(int* nums, int numsSize) {
     int ret = 0;
