@@ -18,6 +18,7 @@
  * 'e' is the letter that was added.
  *
  * */
+// Solution 1:
 char findTheDifference(char* s, char* t) {
     char r = 0;
     int i = 0, j =0;
@@ -31,4 +32,23 @@ char findTheDifference(char* s, char* t) {
     }
     return r;
 }
+
+// Solution 2:
+char findTheDifference(char* s, char* t) {
+    int i = 0, j = 0;
+    char r = 0;
+    int sum1 =0,  sum2 = 0;    
+
+    while(s[i]) {
+        sum1+=s[i];
+        i++;
+    }
+    while(t[j]) {
+        sum2+=t[j];
+        j++;
+    }
+    r = (char)(sum2-sum1);
+    return r;
+}
+
 
