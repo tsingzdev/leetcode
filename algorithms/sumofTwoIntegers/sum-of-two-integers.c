@@ -5,7 +5,10 @@
  * Given a = 1 and b = 2, return 3.
  * */
 
-int getSum(int a, int b) {
+/*see this link with proof: 
+ * https://discuss.leetcode.com/topic/52404/my-c-code-with-proof
+*/
+  int getSum(int a, int b) {
         while (b) {
             int carry = a & b;
             a ^= b;
@@ -14,3 +17,5 @@ int getSum(int a, int b) {
         return a;
         
 }
+
+
