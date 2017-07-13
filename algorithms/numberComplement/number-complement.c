@@ -15,7 +15,11 @@
  * */
 
 int findComplement(int num) {
-    long i;
+    long i; /*int i ;  type will result in wrong answer: Input:    2147483647
+                                                    Output:   -2147483648
+                                                    Expected: 0
+            */
+    // unsigned i; // OK 
     for (i = 1; i<= num; i<<=1) {
         num^=i;
     }
