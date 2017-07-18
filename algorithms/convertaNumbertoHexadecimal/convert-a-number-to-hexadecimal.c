@@ -22,9 +22,44 @@ Input:
 Output:
 "ffffffff"
  * */
+//Solution 1:
+#define HEX_MAP(x)  ((x)["0123456789abcdef"])
 
 char* toHex(int num) {
+    static char tab[0x20];
+    char *p = tab +0x20;
+    unsigned int value = num;
 
-        
+    *--p = HEX_MAP(value&15);
+    while (0!= (value>>=4))
+        *--p = HEX_MAP (value &15);
+    return (p);
 }
+
+// Solution 2:
+//
+char *toHex (int num) {
+    unsigned int n = num;
+    int size = 0;
+    if(n==0) return "0";
+
+    while (n>0) {
+        n/=16;
+        size++;
+    }
+    n = num;
+
+    char *ans = (char*) malloc(sizeof(char*)*size);
+    ans[size]='\0'; 
+    while(n>0) {
+        char c = n%16;
+        (c<10)?(c+='0'):(c+='a'-10);
+        n/=16;
+        ans[--size] = c;
+    }
+    return ans;
+}
+
+
+
 
