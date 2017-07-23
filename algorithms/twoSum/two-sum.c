@@ -20,54 +20,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*qsort*/
-typedef struct {
-    int idx;
-    int data;
-} Node;
-
-int compar (const void *p1, const void *p2) {
-    if (((Node *)p1)->data < ((Node *)p2)->data ) return -1;
-    else if (((Node *)p1)->data > ((Node *)p2)->data ) return 1;
-    else return 0;
-}
-
-int *twoSum_qsort (int numbers[], int n, int target) {
-    int i, j;
-    static int ret[2] = {0, 0};
-    Node * num_nodes = (Node *) calloc (n, sizeof (Node));
-
-    for (i = 0; i < n; i++) {
-        num_nodes[i].idx = i+1;
-        num_nodes[i].data = numbers[i];
-    }
-
-    qsort (num_nodes, n, sizeof (Node), compar) ;
-
-    i = 0, j = n-1;
-    while (i<n && j>=0) {
-        if (num_nodes[i].data + num_nodes[j].data == target) {
-            ret[0] = num_nodes[i].idx;
-            ret[1] = num_nodes[j].idx;
-            if (ret[0] > ret[1]) {
-                int t = ret[1];
-                ret [1] = ret[0];
-                ret [0] = t;
-            
-            }
-            return ret;
-        }
-        else if (num_nodes[i].data + num_nodes[j].data < target) {
-            i++;
-        }
-        else {
-            j++;
-        }
-    }
-
-    return ret;
-}
-
 /*hash table*/
 
 typedef struct HashNode {
@@ -118,8 +70,8 @@ int *twoSum (int numbers[], int n, int target) {
         p = hashtable[idx];
         while (p!= NULL) {
             if (p->val == diff && p->key !=1) {
-                ret [0] = p->key +1;
-                ret [1] = i+1;
+                ret [0] = p->key ;
+                ret [1] = i;
                 // swp value
                 if (ret[0] > ret[1]) {
                     ret[0] = ret[0] ^ ret[1];
@@ -139,8 +91,7 @@ int *twoSum (int numbers[], int n, int target) {
 int main () {
     int numbers[] = {0,2,4,5,6,8,10};
     int target = 11;
-    //int *index = twoSum_qsort (numbers, sizeof(numbers) / sizeof(numbers[0]), target);
-    int *index = twoSum_qsort(numbers, sizeof(numbers) / sizeof(numbers[0]), target);
+    int *index = twoSum(numbers, sizeof(numbers) / sizeof(numbers[0]), target);
 
     int i;
     for(i = 0; i<2; i++) {
