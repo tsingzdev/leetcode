@@ -16,6 +16,11 @@ return [0, 1].
  *
  */
 
+// 1) Traverse the array one by one
+// 2) just put the 'target - num[i]' into the map£¬
+// so when checking the next num[i], if found it existed 
+// in the map, means we found the second one.
+
 class Solution:{ 
     public:
         vector<int> twoSum (vector<int> &numbers, int target) {
