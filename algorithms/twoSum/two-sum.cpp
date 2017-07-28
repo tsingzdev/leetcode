@@ -29,7 +29,7 @@ class Solution:{
             for (int i = 0; i< numbers.size(); i++) {
                 // not found the second one
                 if (m.find(numbers[i]) ==m.end() ) {
-                    // store thr first one position into the second one's key 
+                    // store the first one position into the second one's key 
                     m[target - numbers[i]] = i;
                 } else {
                     //found the second one
