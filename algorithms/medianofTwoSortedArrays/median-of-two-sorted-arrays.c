@@ -16,6 +16,7 @@
  * The median is (2 + 3)/2 = 2.5
  * */
 
+
 double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Size) {
 
 	int *arr;
@@ -27,7 +28,7 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
     i = 0;
     j = 0;
     k = 0;
-    while ( i < nums1Size && j > nums2Size)
+    while ( i < nums1Size && j < nums2Size)
         arr[k++] = nums1[i] < nums2[j] ? nums1[i++] : nums2[j++];
 
     while (i < nums1Size)
@@ -38,8 +39,11 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
     if(num % 2)
         ret = arr[num/2];
     else
-        ret = (arr[(num-1)/2]) + arr[num/2]/2.0;
+        ret = (arr[(num-1)/2] + arr[num/2])/2.0;
 
     free(arr);
     return ret;        
 }
+
+
+
