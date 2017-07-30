@@ -41,4 +41,16 @@ class Solution:{
             return result;
         }
 
+        vector<int> twoSum2 (vector<int>& nums, int target) {
+            unordered_map<int, int> lookup;
+            for (int i =0; i<nums.size(); ++i) {
+                if(lookup.count(target - nums[i])) {
+                    return {lookup[target - nums[i]], i};
+                }
+                lookup[nums[i]] = i;
+            }
+            return {};
+        }
+
 };
+
