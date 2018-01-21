@@ -12,8 +12,8 @@ class Solution:
              return x**n
 
 
-# Solution 2:
-class Solution:
+# Solution 2: Recursive
+class Solution: 
     def myPow(self, x, n):
         if not n:
             return 1
@@ -26,3 +26,17 @@ class Solution:
             
         
         
+# Solution 3: iterative
+class Solution:
+    def myPow(self, x, n):
+        if n<0:
+            x = 1/x
+            n = -n
+        pow = 1
+        while n:
+            if n&1:
+                pow*=x
+            x*=x
+            n>>=1
+        return pow
+
