@@ -26,7 +26,7 @@ double myPow_0(double x, int n) {
 }
 
 //Solution 1: accepted.
-double myPow(double x, int n) {
+double myPow_1(double x, int n) {
     if (n ==0) return 1;     
     if (n < 0) return 1/x * myPow(1/x, -(n+1));
     if (n==2) return x*x;
@@ -34,6 +34,32 @@ double myPow(double x, int n) {
     if (n%2==0) return myPow( myPow(x, n/2), 2);
     else return x*myPow( myPow(x, n/2), 2);
 }
+
+//Solution 2: wrong answer.
+/*
+ * Input:
+ * 2.00000
+ * -2147483648
+ *  Output:
+ *  1.00000
+ *  Expected:
+ *  0.00000
+ *  */
+double myPow_2(double x, int n) {
+    if (n==0) return 1;
+    if (n<0) {
+        n = -n;
+        x = 1/x;
+    } 
+    double ans = 1;
+    while (n >0) {
+        if(n&1) ans*= x;
+        x*=x;
+        n>>=1;
+    }
+    return ans;
+}
+
 
 
 int main () {
