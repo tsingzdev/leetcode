@@ -57,7 +57,7 @@ public:
     }
 };
 
-class Solution {
+class Solution2 {
 public: 
     void rotate(vector<vector<int>>& matrix) {
         const int n = matrix.size();
