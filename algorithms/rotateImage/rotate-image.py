@@ -27,6 +27,7 @@ class Solution(object):
         return matrix
 
 
+# Do not return anything, modify matrix in-place instead.
 class Solution2(object):
     def rotate(self, matrix):
         return [list(reversed(x)) for x in zip(*matrix)]
