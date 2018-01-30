@@ -41,7 +41,7 @@ rotate the input matrix in-place such that it becomes:
 void swap(int *a, int *b) {
 	int tmp = *a;
     *a = *b;
-    *b = *tmp;
+    *b = tmp;
 }
 
 void rotate(int** matrix, int matrixRowSize, int *matrixColSizes) {
