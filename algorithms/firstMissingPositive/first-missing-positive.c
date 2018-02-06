@@ -10,6 +10,22 @@
 */
 
 int firstMissingPositive(int* nums, int numsSize) {
+    int i;
+    for (i = 0; i< numsSize; i++) {
+        while(nums[i] > 0 && nums[i]< numsSize && nums[nums[i]-1] != nums[i]) {
+            int t = nums[i];
+            nums[i] = nums[t-1];
+            nums[t-1] = t;
 
+        }
+    }
+
+    for(i = 0; i<numsSize; i++) {
+        if(nums[i]!=i+1) {
+            break;
+        }
+    }
+
+    return i+1;
 }
 
