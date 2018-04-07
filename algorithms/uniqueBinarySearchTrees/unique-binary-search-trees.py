@@ -27,18 +27,14 @@ class Solution(object):
         return combination(2*n, n) - combination(2*n, n-1)
 
 class Solution2(object):
-    def numTress(self, n):
+    def numTrees(self, n):
         counts = [1,1]
         for i in xrange(2, n+1):
             count = 0
             for j in xrange(i):
                 count+= counts[j]*counts[i-j-1]
             counts.append(count)
-        return count[-1]
+        return counts[-1]
 
-
-            
-
-
-         
-
+if __name__ == "__main__":
+    print Solution2().numTrees(3)
