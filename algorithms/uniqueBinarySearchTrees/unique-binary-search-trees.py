@@ -24,7 +24,7 @@ class Solution(object):
             for i in xrange(1, k+1):
                 count = count* (n-i+1)/i
             return count
-        return combination(2*n, n) - cimbination(2*n, n-1)
+        return combination(2*n, n) - combination(2*n, n-1)
 
 class Solution2(object):
     def numTress(self, n):
