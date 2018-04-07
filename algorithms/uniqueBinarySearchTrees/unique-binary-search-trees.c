@@ -14,6 +14,8 @@ Given n = 3, there are a total of 5 unique BST's.
 
 /*Strategy: consider each value could be root, 
  * recur find the size of the left and right subtrees*/
+//
+// Run Code Status: Time Limit Exceeded
 int numTrees(int n) {
     struct node * node;
     if(n<=1) return 1;
@@ -29,4 +31,16 @@ int numTrees(int n) {
     }
 }
 
-
+// Solution 2: Accepted
+int numTrees(int n) {
+    int count[128] = {0};
+    count[0] = count[1] = 1;
+    count[2] = 2; 
+    for (int i = 3; i<128; i++) {
+        for (int j = 0; j<i; j++) {
+            count[i]+=count[j]*count[i-j-1];
+        }
+    
+    }
+    return count[n];
+}
