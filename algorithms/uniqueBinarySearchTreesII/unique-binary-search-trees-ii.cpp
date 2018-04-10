@@ -31,7 +31,7 @@ class Solution{
     private:
         vector<TreeNode *> generateTreesHelper(int start, int end) {
             vector<TreeNode *> result;
-            if(start < end) {
+            if(start > end) {
                 result.emplace_back(nullptr);
                 return result;
             }
