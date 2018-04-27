@@ -11,3 +11,6 @@ cat words.txt | tr -s ' ' '\n' | sort | uniq -c | sort -r | awk '{print $2, $1}'
 #Solution2: 
 #awk '{for(i=1;i<=NF;i++) a[$i]++} END {for(k in a) print k,a[k]}' words.tx    t # not working, no sort
 awk '{for(i=1;i<=NF;i++) a[$i]++} END {for(k in a) print k,a[k]}' words.txt     | sort -k2 -nr
+
+#Solution3:
+cat words.txt | tr '[:space:]' '\n' | sed '/^$/d' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -r | awk '{print $2 ,$1}'
