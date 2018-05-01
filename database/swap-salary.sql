@@ -19,4 +19,13 @@ After running your query, the above salary table should have the following rows:
 */
 
 
+#Solution1: 
 update salary set sex = IF(sex = 'm', 'f', 'm');
+
+#Solution2: 
+UPDATE salary 
+SET
+    sex = CASE sex
+        WHEN 'm' THEN 'f'
+        ELSE 'm'
+    END;
