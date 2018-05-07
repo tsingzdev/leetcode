@@ -1,2 +1,18 @@
 # leetcode
-leetcode solutions
+leetcode solutions 
+
+
+
+## Algorithms
+
+
+
+## Database
++ SQL
+
+
+
+## Shell
++ Shell Script
+
+
