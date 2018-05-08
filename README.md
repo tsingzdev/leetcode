@@ -12,8 +12,9 @@ leetcode solutions
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
-175 |   |    |
-176 |   |    |
+175 |[Combine Two Tables   ](https://leetcode.com/problems/combine-two-tables/)   | [MySQL](./database/combine-two-tables.sql)   |Easy
+176 |[Second Highest Salary ](https://leetcode.com/problems/second-highest-salary/description/)   |[MySQL](./database/second-highest-salary.sql)    |Easy
+
 
 ## Shell
 + [Shell Script](https://github.com/tsingzdev/leetcode/tree/master/shell)
