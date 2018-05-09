@@ -17,7 +17,7 @@ leetcode solutions
 
 
 ## Shell
-+ [Shell Script](https://github.com/tsingzdev/leetcode/tree/master/shell)
++ [Shell Script](./shell)
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
