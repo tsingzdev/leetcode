@@ -2,15 +2,13 @@
 Leetcode solutions, under update progressively, stay tuned.
 
 
-## ToC 
-
-### Algorithms
+## Algorithms
 * [Algorithms](./algorithms)
 
-### Database 
+## Database 
 * [SQL](https://github.com/tsingzdev/leetcode#sql)
 
-### Shell
+## Shell
 * [Shell Script](https://github.com/tsingzdev/leetcode#shell-script)
 
 
