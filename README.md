@@ -1,9 +1,12 @@
-# leetcode
-leetcode solutions 
+# Leetcode
+Leetcode solutions 
 
 
 
 ## Algorithms
++ [Algorithms](./algorithms)
+
+
 
 
 
