@@ -13,6 +13,13 @@ Leetcode solutions, under update progressively, stay tuned.
 ## Database
 + [SQL](./database)
 
+## Shell
++ [Shell Script](./shell)
+
+
+
+## Database
+
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
 175 |[Combine Two Tables   ](https://leetcode.com/problems/combine-two-tables/)   | [MySQL](./database/combine-two-tables.sql)   |Easy
@@ -35,8 +42,8 @@ Leetcode solutions, under update progressively, stay tuned.
 627 |[Swap Salary    ](https://leetcode.com/problems/swap-salary/)|[MySQL](./master/database/swap-salary.sql)|Easy
 
 
-## Shell
-+ [Shell Script](./shell)
+
+## Shell Script
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
