@@ -24,7 +24,12 @@ leetcode solutions
 185 |[Department Top Three Salaries  ](https://leetcode.com/problems/department-top-three-salaries/)|[MySQL](./database/department-top-three-salaries.sql) |Hard
 196 |[Delete Duplicate Emails    ](https://leetcode.com/problems/delete-duplicate-emails/)|[MySQL](./database/delete-duplicate-emails.sql) |Easy
 197 |[Rising Temperature    ](https://leetcode.com/problems/rising-temperature/description/)|[MySQL](./database/rising-temperature.sql)|Easy
-
+262 |[Trips and Users    ](https://leetcode.com/problems/trips-and-users/)|[./master/database/trips-and-users.sql]|Hard
+595 |[Big Countries    ](https://leetcode.com/problems/big-countries/)|[MySQL](./master/database/big-countries.sql)|Easy
+596 |[Classes More Than 5 Students    ](https://leetcode.com/problems/classes-more-than-5-students/description/)|[MySQL](./database/classes-more-than-5-students.sql)|Easy
+620 |[Not Boring Movies    ](https://leetcode.com/problems/not-boring-movies/) |[MySQL](./master/database/not-boring-movies.sql)|Easy
+626 |[Exchange Seats    ](https://leetcode.com/problems/exchange-seats/description/)|[MySQL](./database/exchange-seats.sql)|Medium
+627 |[Swap Salary    ](https://leetcode.com/problems/swap-salary/)|[MySQL](./master/database/swap-salary.sql)|Easy
 
 
 ## Shell
