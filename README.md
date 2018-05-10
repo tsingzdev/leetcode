@@ -13,9 +13,11 @@ leetcode solutions
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
 175 |[Combine Two Tables   ](https://leetcode.com/problems/combine-two-tables/)   | [MySQL](./database/combine-two-tables.sql)   |Easy
-176 |[Second Highest Salary ](https://leetcode.com/problems/second-highest-salary/description/)   |[MySQL](./database/second-highest-salary.sql)    |Easy
-177 |[Nth Highest Salary  ](https://leetcode.com/problems/nth-highest-salary/description/) |[MySQL](./database/nth-highest-salary.sql)  | Medium
-
+176 |[Second Highest Salary ](https://leetcode.com/problems/second-highest-salary/)   |[MySQL](./database/second-highest-salary.sql)    |Easy
+177 |[Nth Highest Salary  ](https://leetcode.com/problems/nth-highest-salary/) |[MySQL](./database/nth-highest-salary.sql)  | Medium
+178 |[Rank Scores    ](https://leetcode.com/problems/rank-scores/) |[MySQL](./database/rank-scores.sql) | Medium
+180 |[Consecutive Numbers   ](https://leetcode.com/problems/consecutive-numbers/description/)|[MySQL](./database/consecutive-numbers.sql) | Medium
+181 |[Employees Earning More Than Their Managers   ](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)|[MySQL](./database/consecutive-numbers.sql) | Easy
 
 
 ## Shell
