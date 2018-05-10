@@ -1,4 +1,4 @@
-# [Leetcode](https://leetcode.com/problems) ![Language](https://img.shields.io/badge/Language-C%20%2F%20Python%20%2FJava-green.svg)
+# [LeetCode](https://leetcode.com/problems) ![Language](https://img.shields.io/badge/Language-C%20%2F%20Python%20%2F%20Java-green.svg)
 Leetcode solutions, under update progressively, stay tuned.
 
 
