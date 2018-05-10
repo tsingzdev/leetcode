@@ -14,6 +14,8 @@ leetcode solutions
 --- | --- | --- | --- 
 175 |[Combine Two Tables   ](https://leetcode.com/problems/combine-two-tables/)   | [MySQL](./database/combine-two-tables.sql)   |Easy
 176 |[Second Highest Salary ](https://leetcode.com/problems/second-highest-salary/description/)   |[MySQL](./database/second-highest-salary.sql)    |Easy
+177 |[Nth Highest Salary  ](https://leetcode.com/problems/nth-highest-salary/description/) |[MySQL](./database/nth-highest-salary.sql)  | Medium
+
 
 
 ## Shell
