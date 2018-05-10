@@ -17,7 +17,7 @@ leetcode solutions
 177 |[Nth Highest Salary  ](https://leetcode.com/problems/nth-highest-salary/) |[MySQL](./database/nth-highest-salary.sql)  | Medium
 178 |[Rank Scores    ](https://leetcode.com/problems/rank-scores/) |[MySQL](./database/rank-scores.sql) | Medium
 180 |[Consecutive Numbers   ](https://leetcode.com/problems/consecutive-numbers/description/)|[MySQL](./database/consecutive-numbers.sql) | Medium
-181 |[Employees Earning More Than Their Managers   ](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)|[MySQL](./database/consecutive-numbers.sql) | Easy
+181 |[Employees Earning More Than Their Managers   ](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)|[MySQL](./database/employees-earning-more-than-their-managers.sql) | Easy
 
 
 ## Shell
