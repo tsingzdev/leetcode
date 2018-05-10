@@ -1,5 +1,5 @@
-# Leetcode
-Leetcode solutions 
+# [Leetcode](https://leetcode.com/problems) ![Language](https://img.shields.io/badge/Language-C%20%2F%20Python%20%2FJava-green.svg)
+Leetcode solutions, under update progressively, stay tuned.
 
 
 
