@@ -11,14 +11,14 @@ Leetcode solutions, under update progressively, stay tuned.
 
 
 ## Database
-+ [SQL](./database)
++ [SQL](https://github.com/tsingzdev/leetcode#sql)
 
 ## Shell
-+ [Shell Script](./shell)
++ [Shell Script](https://github.com/tsingzdev/leetcode#shell-script)
 
 
 
-## Database
+## SQL
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
