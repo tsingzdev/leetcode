@@ -15,9 +15,11 @@ Leetcode solutions, under update progressively, stay tuned.
 ## Algoritms
 
 
-| #        | Title           | Solution	  | Difficulty   | Topics
+| #        | Title           | Solution	  | Difficulty   | Topics |
 --- | --- | --- | --- | ---
 78  |[Subsets](https://leetcode.com/problems/subsets/description/) | [C](./algorithms/subsets/subsets.c) / [C++](./algorithms/subsets/subsets.cpp) / [Python](./algorithms/subsets/subsets.py) | Medium | Array / Backtracking
+136 |[Single Number](https://leetcode.com/problems/single-number/description/) |[C](./algorithms/singleNumber/single-number.c) / [Python](./algorithms/singleNumber/single-number.py) | Easy | Bit Manipulation
+137 |[Single Number II](https://leetcode.com/problems/single-number-ii/description/) |[C](./algorithms/singleNumberII/single-number-ii.c) / [Python](./algorithms/singleNumberII/single-number-ii.py) | Medium | Bit Manipulation
 
 
 ## SQL
