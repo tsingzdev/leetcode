@@ -12,6 +12,13 @@ Leetcode solutions, under update progressively, stay tuned.
 * [Shell Script](https://github.com/tsingzdev/leetcode#shell-script)
 
 
+## Algoritms
+
+
+| #        | Title           | Solution	  | Difficulty   | Topics
+--- | --- | --- | --- | ---
+78  |[Subsets](https://leetcode.com/problems/subsets/description/) | [C](./algorithms/subsets/subsets.c) / [C++](./algorithms/subsets/subsets.cpp) / [Python](./algorithms/subsets/subsets.py) | Medium | Array / Backtracking
+
 
 ## SQL
 
