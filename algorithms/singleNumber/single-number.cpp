@@ -16,11 +16,13 @@ Input: [4,1,2,1,2]
 Output: 4
 * 
 */
+/*
 #include <iostream>
 #include <vector>
 #include <numeric>
 
 using namespace std;
+*/
 
 class Solution {
 public:
@@ -30,9 +32,11 @@ public:
     }
 };
 
+/*
 int main () {
     vector<int> nums =  {1, 2, 3, 4, 1, 2, 4};
     Solution s;
     printf ("%d\n", s.singleNumber(nums, 7));
     return 0;
 }
+*/
