@@ -13,10 +13,10 @@
  * Output: 0
  *
  * In this case, no transaction is done, i.e. max profit = 0.*/
+
 #include<stdio.h>
 
 int maxProfit(int* prices, int pricesSize) {
-    //int n = sizeof(prices)/sizeof(prices[0]);
     int n = pricesSize;
     int ret = 0;
     int min = prices[0];
