@@ -13,21 +13,28 @@
  * Output: 0
  *
  * In this case, no transaction is done, i.e. max profit = 0.*/
+#include<stdio.h>
 
 int maxProfit(int* prices, int pricesSize) {
-    int i;
-    int ret, min;
-    ret = 0;
-    min = prices[0];
-    for (i = 0; i < n; i++) {
-            if (prices[i] < min)
-                        min = prices[i];
-                
-                if (prices[i] - min > ret)
-                            ret = prices[i] - min;
-                }
-    return ret;    
+    //int n = sizeof(prices)/sizeof(prices[0]);
+    int n = pricesSize;
+    int ret = 0;
+    int min = prices[0];
+    for (int i = 0; i < n; i++) {
 
+        if (prices[i] - min > ret)
+            ret = prices[i] - min;
+
+        if (prices[i] < min)
+            min = prices[i];
+    }
+    return ret;
 }
 
+int main () {
+    int array[] = {7,1,5,3,6,4};
+    int result;
+    result = maxProfit(array, 6);
+    printf("%d\n", result);
+}
 
