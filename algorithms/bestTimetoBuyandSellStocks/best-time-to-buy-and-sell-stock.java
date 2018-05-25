@@ -33,7 +33,7 @@ class Solution {
     }
 }
 
-//Solution2: 
+//Solution2: using DP (Dynamic programming)
 class Solution {
     public int maxProfit(int[] prices) {
         int len = prices.length;
