@@ -25,15 +25,18 @@
  * Input: [7,6,4,3,1]
  * Output: 0
  * Explanation: In this case, no transaction is done, i.e. max profit = 0.
-*/
-
-int maxProfit(int* prices, int pricesSize) {
-    int max = 0;
-    int diff = 0;
-    for(int i =0; i<pricesSize; i++){
-        diff = prices[i+1]-prices[i];
-        if(diff >0)
-            max+= diff; 
-    }    
-    return max;
+ */
+class Solution {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int max = 0;
+        int diff = 0;
+        for(int i =0; i< n-1; i++){
+            diff = prices[i+1]-prices[i];
+            if(diff >0)
+                max+= diff;
+        }
+        return max;
+    }
 }
+
