@@ -10,7 +10,7 @@
 // Solution 1:  is Time Limit Exceeded .   
 // see to this : http://bookshadow.com/weblog/2015/04/17/leetcode-bitwise-and-numbers-range/
 // given the range 0 <= m <= n <= 2147483647, time complexity more than O(n) is not acceptable.
-int rangeBitwiseAnd_0(int m, int n) {
+int rangeBitwiseAnd_TimeLimitExceeded(int m, int n) {
     int ret= m;
     while (m<n) {
         m++;
