@@ -24,7 +24,7 @@ Leetcode solutions, under update progressively, stay tuned.
 122 |[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) |[C](./algorithms/bestTimetoBuyandSellStocksII/best-time-to-buy-and-sell-stock-ii.c) / [Java](./algorithms/bestTimetoBuyandSellStocksII/best-time-to-buy-and-sell-stock-ii.java) | Easy | Array
 136 |[Single Number](https://leetcode.com/problems/single-number/description/) |[C](./algorithms/singleNumber/single-number.c) / [Python](./algorithms/singleNumber/single-number.py) | Easy | Bit Manipulation
 137 |[Single Number II](https://leetcode.com/problems/single-number-ii/description/) |[C](./algorithms/singleNumberII/single-number-ii.c) / [Python](./algorithms/singleNumberII/single-number-ii.py) | Medium | Bit Manipulation
-201 |[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/) |[C](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.c) / [C++](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.c) | Medium | Bit Manipulation
+201 |[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/) |[C](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.c) / [C++](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.cpp) | Medium | Bit Manipulation
 258 |[Add Digits](https://leetcode.com/problems/add-digits/description/) |[C](./algorithms/addDigits/add-digits.c) / [Python](./algorithms/addDigits/add-digits.py) / [Java](./algorithms/addDigits/add-digits.java) | Easy | Math
 
 
