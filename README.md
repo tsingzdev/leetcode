@@ -3,7 +3,7 @@ Leetcode solutions, under update progressively, stay tuned.
 
 
 ## Algorithms
-* [Algorithms](./algorithms/README.md)
+* [Algorithms](https://github.com/tsingzdev/leetcode#algorithms)
 
 ## Database 
 * [SQL](https://github.com/tsingzdev/leetcode#sql)
