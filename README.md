@@ -1,18 +1,20 @@
 # [LeetCode](https://leetcode.com/problems) ![Language](https://img.shields.io/badge/Language-C%20%2F%20Python%20%2F%20Java-green.svg)
 Leetcode solutions, under update progressively, stay tuned.
 
+## Index
 
-## Algorithms
-* [Algorithms](https://github.com/tsingzdev/leetcode#algorithms)
+#### Algorithms
+* [Algorithms solutions in C/C++/Python/Java](https://github.com/tsingzdev/leetcode#algorithms)
 
-## Database 
+#### Database 
 * [SQL](https://github.com/tsingzdev/leetcode#sql)
 
-## Shell
+#### Shell
 * [Shell Script](https://github.com/tsingzdev/leetcode#shell-script)
 
 
-## Algoritms
+## Content
+### Algoritms solutions in C/C++/Python/Java
 
 
 | #        | Title           | Solution	  | Difficulty   | Topics |
@@ -30,7 +32,7 @@ Leetcode solutions, under update progressively, stay tuned.
 405 |[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/) |[C](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.c) / [C++](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.cpp) | Easy | Bit Manipulation
 
 
-## SQL
+### SQL
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
@@ -55,7 +57,7 @@ Leetcode solutions, under update progressively, stay tuned.
 
 
 
-## Shell Script
+### Shell Script
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
