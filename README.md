@@ -26,6 +26,7 @@ Leetcode solutions, under update progressively, stay tuned.
 137 |[Single Number II](https://leetcode.com/problems/single-number-ii/description/) |[C](./algorithms/singleNumberII/single-number-ii.c) / [Python](./algorithms/singleNumberII/single-number-ii.py) | Medium | Bit Manipulation
 201 |[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/) |[C](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.c) / [C++](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.cpp) / [Java](./algorithms/bitwiseANDofNumbersRange/bitwise-and-of-numbers-range.java)| Medium | Bit Manipulation
 258 |[Add Digits](https://leetcode.com/problems/add-digits/description/) |[C](./algorithms/addDigits/add-digits.c) / [Python](./algorithms/addDigits/add-digits.py) / [Java](./algorithms/addDigits/add-digits.java) | Easy | Math
+338 |[Counting Bits](https://leetcode.com/problems/counting-bits/description/) |[C++](./algorithms/countingBits/counting-bits.cpp) | Medium | Bit Manipulation
 405 |[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/) |[C](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.c) / [C++](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.cpp) | Easy | Bit Manipulation
 
 
