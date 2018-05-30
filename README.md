@@ -4,7 +4,7 @@ Leetcode solutions, under update progressively, stay tuned.
 ## Index
 
 #### Algorithms
-* [Algorithms solutions in C/C++/Python/Java](https://github.com/tsingzdev/leetcode#algorithms)
+* [Algorithms](https://github.com/tsingzdev/leetcode#algorithms)
 
 #### Database 
 * [SQL](https://github.com/tsingzdev/leetcode#sql)
@@ -14,7 +14,7 @@ Leetcode solutions, under update progressively, stay tuned.
 
 
 ## Content
-### Algoritms solutions in C/C++/Python/Java
+### Algoritms
 
 
 | #        | Title           | Solution	  | Difficulty   | Topics |
