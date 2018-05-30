@@ -14,7 +14,7 @@ Leetcode solutions, under update progressively, stay tuned.
 
 
 ## Content
-### Algoritms
+#### Algoritms
 
 
 | #        | Title           | Solution	  | Difficulty   | Topics |
@@ -32,7 +32,7 @@ Leetcode solutions, under update progressively, stay tuned.
 405 |[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/) |[C](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.c) / [C++](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.cpp) | Easy | Bit Manipulation
 
 
-### SQL
+#### SQL
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
@@ -57,7 +57,7 @@ Leetcode solutions, under update progressively, stay tuned.
 
 
 
-### Shell Script
+#### Shell Script
 
 | #        | Title           | Solution	  | Difficulty   |
 --- | --- | --- | --- 
