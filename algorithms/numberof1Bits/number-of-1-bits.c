@@ -38,7 +38,11 @@ int hammingWeight3(uint32_t n) {
 
 int main () {
     uint32_t n = 11;
+    uint32_t m = 7;
+    uint32_t p = 9999;
     printf("%d\n", hammingWeight2(n));
+    printf("%d\n", hammingWeight2(m));
+    printf("%d\n", hammingWeight2(p));
     return 0;
 
 }
