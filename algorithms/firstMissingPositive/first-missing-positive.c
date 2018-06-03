@@ -17,10 +17,10 @@ int firstMissingPositive(int* nums, int numsSize) {
     int i;  
     for (i = 0; i< numsSize; i++) {
         while(nums[i] > 0 && nums[i]< numsSize && nums[nums[i]-1] != nums[i]) {
+            // bucket sort
             int t = nums[i];
-            nums[i] = nums[t-1];
-            nums[t-1] = t;
-
+            nums[i] = nums[t-1]; 
+            nums[t-1] = t; 
         }
     }
 
@@ -29,7 +29,6 @@ int firstMissingPositive(int* nums, int numsSize) {
             break;
         }
     }
-
     return i+1;
 }
 
@@ -41,12 +40,6 @@ void swap(int *a, int *b) {
     *a = *b+*a;
 }
 
-void swap_2(int a, int b) {
-    a = b-a;
-    b = b-a;
-    a = b+a;
-}
-
 int firstMissingPositive_2(int* nums, int numsSize) {
     int i;
     for (i = 0; i < numsSize;) {
@@ -54,7 +47,6 @@ int firstMissingPositive_2(int* nums, int numsSize) {
             i++;
         else
             swap(&nums[i], &nums[nums[i]-1]);
-            //swap_2(nums[i], nums[nums[i]-1]);
     }
     for (i = 0; i < numsSize; i++)  {
         if(nums[i]!=i+1)
@@ -64,8 +56,6 @@ int firstMissingPositive_2(int* nums, int numsSize) {
     return i+1;
 
 }
-
-
 
 int main() {
     int nums0[] = {1, 2, 0};
