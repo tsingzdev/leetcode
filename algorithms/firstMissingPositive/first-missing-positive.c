@@ -12,12 +12,24 @@
 #include<stdio.h>
 #include<assert.h>
 
+/* ref : https://leetcode.com/problems/first-missing-positive/discuss/17071/My-short-c++-solution-O(1)-space-and-O(n)-time
+ *
+ * Algorithm: 
+ * Put each number in its right place.
+
+ * For example:
+ * 
+ * When we find 5, then swap it with A[4].
+ * 
+ * At last, the first place where its number is not right, return the place + 1.
+ **/
+
 /*Solution 1 */
 int firstMissingPositive(int* nums, int numsSize) {
     int i;  
     for (i = 0; i< numsSize; i++) {
         while(nums[i] > 0 && nums[i]< numsSize && nums[nums[i]-1] != nums[i]) {
-            // bucket sort
+
             int t = nums[i];
             nums[i] = nums[t-1]; 
             nums[t-1] = t; 
@@ -31,7 +43,6 @@ int firstMissingPositive(int* nums, int numsSize) {
     }
     return i+1;
 }
-
 
 /*Solution 2 */
 void swap(int *a, int *b) {
@@ -54,7 +65,6 @@ int firstMissingPositive_2(int* nums, int numsSize) {
     }
 
     return i+1;
-
 }
 
 int main() {
@@ -62,16 +72,19 @@ int main() {
     int nums1[] = {3, 4, -1, 1};
     int nums2[] = {-1, 4, 2, 1, 9, 10};
     int nums3[] = {1, 1};
+    int nums4[] = {1, 2, 3};
 
     int p1 = firstMissingPositive_2(nums0, 3);
     int p2 = firstMissingPositive_2(nums1, 4);
     int p3 = firstMissingPositive_2(nums2, 6);
     int p4 = firstMissingPositive_2(nums3, 2);
+    int p5 = firstMissingPositive(nums4, 3);
 
     printf("%d\n", p1);
     printf("%d\n", p2);
     printf("%d\n", p3);
     printf("%d\n", p4);
+    printf("%d\n", p5);
 
     return 0;
 }
