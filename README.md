@@ -33,6 +33,7 @@ Leetcode solutions, under update progressively, stay tuned.
 338 |[Counting Bits](https://leetcode.com/problems/counting-bits/description/) | [C](./algorithms/countingBits/counting-bits.c) / [C++](./algorithms/countingBits/counting-bits.cpp) / [Java](./algorithms/countingBits/counting-bits.java) | Medium | Bit Manipulation
 389 |[Find the Difference](https://leetcode.com/problems/find-the-difference/description/) |[C](./algorithms/findtheDifference/find-the-difference.c) / [Java](./algorithms/findtheDifference/find-the-difference.java) |  Easy | Bit Manipulation
 405 |[Convert a Number to Hexadecimal](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/) |[C](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.c) / [C++](./algorithms/convertaNumbertoHexadecimal/convert-a-number-to-hexadecimal.cpp) | Easy | Bit Manipulation
+461 |[Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [C](./algorithms/hammingDistance/hamming-distance.c) / [Java](./algorithms/hammingDistance/hamming-distance.java) | Easy | Bit Manipulation
 
 
 #### SQL
