@@ -43,3 +43,23 @@ int findDuplicate(int* nums, int numsSize) {
     return l;
 }
 
+//Solution 3:
+int findDuplicate(int* nums, int size) {
+    if(size>0) {
+        int slow = nums[0];
+        int fast = nums[nums[0]];
+        while(slow != fast) { //check the existance of the loop
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }
+        fast = 0;
+        while(slow != fast) { // find the start of the loop which means 
+                              //at least two integer are the same value
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+        return slow;
+    }
+    return -1;
+}
+
