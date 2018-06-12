@@ -16,13 +16,14 @@ int lengthOfLongestSubstring(char* s) {
     const int MAX_CHARS = 256;
     int index[MAX_CHARS];        
     int last_index;
-    int i ,ret;
+    int i ,ret, len;
 
+    len = strlen(s);
     memset(index, 0, sizeof(int)*MAX_CHARS);
     last_index = -1;
 
     ret = 0;
-    for (i = 0; i<strlen(s); i++) {
+    for (i = 0; i<len; i++) {
         last_index = index[s[i]] > last_index ? index[s[i]] : last_index;
         index[s[i]] = i+1;
         ret = (i - last_index +1 > ret) ? i-last_index +1:ret;
