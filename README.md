@@ -58,7 +58,6 @@ Leetcode solutions, under update progressively, stay tuned.
 196 |[Delete Duplicate Emails    ](https://leetcode.com/problems/delete-duplicate-emails/)|[MySQL](./database/delete-duplicate-emails.sql) |Easy
 197 |[Rising Temperature    ](https://leetcode.com/problems/rising-temperature/description/)|[MySQL](./database/rising-temperature.sql)|Easy
 262 |[Trips and Users    ](https://leetcode.com/problems/trips-and-users/)|[MySQL](./database/trips-and-users.sql)|Hard
-
 595 |[Big Countries    ](https://leetcode.com/problems/big-countries/)|[MySQL](./database/big-countries.sql)|Easy
 596 |[Classes More Than 5 Students    ](https://leetcode.com/problems/classes-more-than-5-students/description/)|[MySQL](./database/classes-more-than-5-students.sql)|Easy
 620 |[Not Boring Movies    ](https://leetcode.com/problems/not-boring-movies/) |[MySQL](./database/not-boring-movies.sql)|Easy
