@@ -13,6 +13,9 @@
  * [2,3]
 * */
 
+// Solution 1:
+/*when find a number i, flip the number at position i-1 to negative. 
+if the number at position i-1 is already negative, i is the number that occurs twice.*/
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> ret = new ArrayList<Integer>();
@@ -22,6 +25,28 @@ class Solution {
                 ret.add(Math.abs(val+1));
             nums[val] = -nums[val];
         }        
+        return ret;
+    }
+}
+
+//Solution 2: using in-place sort
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> ret = new ArrayList<Integer>();
+        int i=0;
+        while(i<nums.length) {
+            if(nums[i] != i+1 && nums[i] != nums[nums[i]-1] ) {
+                int tmp = nums[i];
+                nums[i] = nums[tmp -1];
+                nums[tmp -1] = tmp;
+            }
+            else i++;
+        }
+
+        for(i =0 ; i<nums.length; i++) {
+            if(nums[i]!=i+1)
+               ret.add(nums[i]); 
+        }
         return ret;
     }
 }
