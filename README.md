@@ -40,6 +40,7 @@ Leetcode solutions, under update progressively, stay tuned.
 442 |[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/description/) |[C](./algorithms/findAllDuplicatesinanArray/find-all-duplicates-in-an-array.c) / [Java](./algorithms/findAllDuplicatesinanArray/find-all-duplicates-in-an-array.java) | Medium | Array
 448 |[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [C](./algorithms/findAllNumbersDisappearedinanArray/find-all-numbers-disappeared-in-an-array.c) / [C++](./algorithms/findAllNumbersDisappearedinanArray/find-all-numbers-disappeared-in-an-array.cpp) / [Java](./algorithms/findAllNumbersDisappearedinanArray/find-all-numbers-disappeared-in-an-array.java)|Easy |Array
 461 |[Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [C](./algorithms/hammingDistance/hamming-distance.c) / [Java](./algorithms/hammingDistance/hamming-distance.java) | Easy | Bit Manipulation
+674 |[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) |[C](./algorithms/longestContinuousIncreasingSubsequence/longest-continuous-increasing-subsequence.c) | Easy | Array
 
 
 #### SQL
