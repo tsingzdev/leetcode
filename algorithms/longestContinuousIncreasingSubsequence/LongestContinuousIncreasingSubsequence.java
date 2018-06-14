@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/
 /*Given an unsorted array of integers, find the length of longest continuous increasing subsequence (subarray).
 
-Example 1:
+  Example 1:
 Input: [1,3,5,4,7]
 Output: 3
 Explanation: The longest continuous increasing subsequence is [1,3,5], its length is 3. 
@@ -26,19 +26,15 @@ public class LongestContinuousIncreasingSubsequence {
 
     public int findLengthOfLCIS(int[] nums) {
         int max = 1, count = 1;
-        if(nums.length ==1) return max;
-        if(nums.length ==0) return 0;
-        
-        for(int i=0, j=i+1; j<nums.length;) {
-            if(nums[i] < nums[j]) {
-                count++;
-                i++; j++;
+        if(nums.length == 1) return max;
+        if(nums.length == 0) return 0;
+        for(int i = 0, j = i + 1; j < nums.length; i++,j++){
+            if(nums[j] > nums[i]){
+                count++;              
             } else {
-                max = Math.max(max, count);
-                count =0;
-                i = j;
-                j = i+1;
+                count = 1;
             }
+            max = Math.max(max, count);
         }
         return max;
     }
