@@ -41,7 +41,7 @@ Leetcode solutions, under update progressively, stay tuned.
 448 |[Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/) | [C](./algorithms/findAllNumbersDisappearedinanArray/find-all-numbers-disappeared-in-an-array.c) / [C++](./algorithms/findAllNumbersDisappearedinanArray/find-all-numbers-disappeared-in-an-array.cpp) / [Java](./algorithms/findAllNumbersDisappearedinanArray/find-all-numbers-disappeared-in-an-array.java)|Easy |Array
 461 |[Hamming Distance](https://leetcode.com/problems/hamming-distance/description/) | [C](./algorithms/hammingDistance/hamming-distance.c) / [Java](./algorithms/hammingDistance/hamming-distance.java) | Easy | Bit Manipulation
 673 |[Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/description/) |[C++](./algorithms/numberofLongestIncreasingSubsequence/number-of-longest-increasing-subsequence.cpp) / [Java](./algorithms/numberofLongestIncreasingSubsequence/NumberofLongestIncreasingSubsequence.java) |Medium |Dynimic Programming
-674 |[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) |[Java](./algorithms/longestContinuousIncreasingSubsequence/LongestContinuousIncreasingSubsequence.java) | Easy | Array
+674 |[Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/description/) |[C](./algorithms/longestContinuousIncreasingSubsequence/longest-continuous-increasing-subsequence.c) / [Java](./algorithms/longestContinuousIncreasingSubsequence/LongestContinuousIncreasingSubsequence.java) | Easy | Array
 
 
 #### SQL
